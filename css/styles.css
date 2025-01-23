@@ -370,6 +370,8 @@ ul, ol {
 
 .list-ourportfolio-items {
     width: calc((100% - 48px) / 3);
+    display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-items-ourportfolio {
@@ -378,10 +380,6 @@ ul, ol {
     border-top: none;
     margin-bottom: 8px;
 }
-
-/* .list-items-ourportfolio:hover {
-    transform: translateY(0%);
-} */
 
 .overflow-item {
     position: relative;
@@ -398,21 +396,19 @@ ul, ol {
     background-color: #4D5AE5;
 }
 
-
-
-.link-ourportfolio:hover .p-overflow,
-.link-ourportfolio:focus .p-overflow {
+.list-ourportfolio-items:hover .p-overflow,
+.list-ourportfolio-items:focus .p-overflow {
     transform: translateY(0%);
 }
 
-.link-ourportfolio {
+/* .link-ourportfolio {
     cursor: pointer;
     display: block;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-.link-ourportfolio:hover,
-.link-ourportfolio:focus {
+.list-ourportfolio-items:hover,
+.list-ourportfolio-items:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
                 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
